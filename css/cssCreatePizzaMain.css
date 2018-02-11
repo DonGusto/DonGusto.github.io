@@ -1,0 +1,137 @@
+body{
+    background-image: url("../photo/BordWithVegetabels.jpg");
+    background-attachment: fixed;
+}
+main{
+    background-color: rgba(0, 0, 0, 0.71);
+    width: 80%;
+
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 110px;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-content: center;
+}
+#myTable{
+    width: 100%;
+}
+#myTable *{
+    color: rgba(255, 165, 0, 0.91);
+}
+.myTd{
+    width: 10%;
+    height: 20px;
+
+
+}
+.myTr{
+    height: 20px;
+
+}
+.tdName {
+ width: 70%;
+
+}
+.tdName h3 {
+    display: inline-flex;
+}
+.tdName h5 {
+    display: inline-flex;
+}
+.myTd h1 {
+    text-align: center;
+}
+/*=====================================================*/
+/* Customize the label (the container) */
+.container {
+    display: flex;
+    justify-content: center;
+    padding-left: 20%;
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    align-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(255, 255, 255, 0.91);
+    border: orange 2px solid;
+    border-radius: 10px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: rgba(10, 10, 10, 0.71);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: orange;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#screen{
+    width: 150px;
+    height: 40px;
+    background: rgba(10, 10, 10, 0.71);
+    border-color: orange;
+}
+#screenButton{
+    width: 150px;
+    height: 40px;
+    border: 2px orange solid;
+    background-color: rgba(10, 10, 10, 0.71) ;
+    border-radius: 20px;
+    box-shadow: 0 0 4px #666;
+}
+#screenButton:active{
+    background-color: orange;
+    color: black;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 4px rgba(255, 165, 0, 0.92);
+}

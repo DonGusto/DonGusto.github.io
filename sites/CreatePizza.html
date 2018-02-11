@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Don Gusto</title>
+    <link rel="stylesheet" href="../css/cssCreatePizzaHeader.css">
+    <link rel="stylesheet" href="../css/cssCreatePizzaMain.css">
+    <link rel="stylesheet" href="../css/cssCreatePizzaFooter.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Shrikhand" rel="stylesheet">
+    <script>function getSumFromGroup(group) {
+        var s = 49.9;
+        for (var i = 0; i < group.length; i++) {
+            if (group[i].checked) {
+                s += parseFloat( group[i].value);
+            }
+        }
+        return s;
+    }
+    function getTotal() {
+        var result = document.getElementsByTagName("input");
+        var s = getSumFromGroup(result);
+        document.getElementById("screen").value = s + " грн.";
+    }</script>
+</head>
+<body>
+    <header>
+        <div id="menu1">
+            <div class="menu"><h1>DonGusto</h1></div>
+            <div class="menu"><a href="http://localhost:63342/sitePizza/index.html?_ijt=52vjd2vabo28ebbvo4eda427k0"><h3>Головна</h3></a></div>
+            <div class="menu"><a href="http://localhost:63342/sitePizza/sites/Menu.html?_ijt=nt83smv0lk1s3o0s317gu2jkr1"><h3>Меню</h3></a></div>
+            <div class="menu"><a href=""><h3>Блог</h3></a></div>
+            <div class="menu"><a href="http://localhost:63342/sitePizza/index.html?_ijt=52vjd2vabo28ebbvo4eda427k0#lastDiv1"><h3>Розташування</h3></a></div>
+        </div>
+    </header>
+    <main>
+        <table id="myTable">
+            <tr class="myTr">
+                <td class="myTd" colspan="4"><h1>Основа піци</h1><br><hr></td>
+            </tr>
+
+            <!--========================================Основи=================================-->
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Основа з томатами</h3><h4>(соус з томатів, сир моцарела, орегано)</h4></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="0">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>49.9 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Основа з вершками</h3><h4>(соус на вершковій основі, сир моцарела, орегано)</h4></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="0">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>49.9 грн.</h3></td>
+            </tr>
+
+
+
+
+
+
+            <!--========================================М'ясні добавки=================================-->
+            <tr class="myTr">
+                <td class="myTd" colspan="4"><h1>М'ясні добавки</h1><br><hr></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>М'ясо відварне </h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="15">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>15 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Бекон</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="10">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>10 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Салямі</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="10">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>10 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Шинка</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="10">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>10 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+            <td class="myTd tdName"><h3>Куряче м'ясо</h3><h5> ( 50г.)</h5></td>
+            <td class="myTd"><label class="container">
+                <input type="checkbox" value="12">
+                <span class="checkmark"></span>
+            </label></td>
+            <td class="myTd"><h3>12 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Фарш</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="12">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>12 грн.</h3></td>
+            </tr>
+
+
+
+
+
+            <!--========================================Овочеві=================================-->
+            <tr class="myTr">
+                <td class="myTd" colspan="4"><h1>Овочеві добавки</h1><br><hr></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Кукурудза</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="5">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>5 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Помідори</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="5">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>5 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Огірки</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="5">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>5 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Горошок</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="5">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>5 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Болгарський перець</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="5">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>5 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Цибуля</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="3">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>3 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Гриби</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="5">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>5 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Оливки</h3><h5> ( 30г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="7">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>7 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Ананас</h3><h5> ( 40г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="10">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>10 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Яйце</h3><h5> ( 1шт.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="5">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>5 грн.</h3></td>
+            </tr>
+
+
+
+
+            <!--========================================Рибні=================================-->
+            <tr class="myTr">
+                <td class="myTd" colspan="4"><h1>Рибні добавки</h1><br><hr></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Дари моря</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="15">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>15 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Крабове м'ясо</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="10">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>10 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Риба</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="10">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>10 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+            <td class="myTd tdName"><h3>Тунець</h3><h5> ( 50г.)</h5></td>
+            <td class="myTd"><label class="container">
+                <input type="checkbox" value="10">
+                <span class="checkmark"></span>
+            </label></td>
+            <td class="myTd"><h3>10 грн.</h3></td>
+            </tr>
+
+
+
+
+
+            <tr class="myTr">
+                <td class="myTd" colspan="4"><h1>Сирні добавки</h1><br><hr></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Твердий сир</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="10">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>10 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Моцарела</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="10">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>10 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Сулугуні</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="10">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>10 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Пармезан</h3><h5> ( 30г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="15">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>15 грн.</h3></td>
+            </tr>
+            <tr class="myTr">
+                <td class="myTd tdName"><h3>Бринза</h3><h5> ( 50г.)</h5></td>
+                <td class="myTd"><label class="container">
+                    <input type="checkbox" value="10">
+                    <span class="checkmark"></span>
+                </label></td>
+                <td class="myTd"><h3>10 грн.</h3></td>
+            </tr>
+
+
+            <!--========================================Результат=================================-->
+            <tr class="myTr">
+                <td class="myTd" colspan="4"><hr></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Результат" onclick="getTotal()" id="screenButton"></td>
+                <td><input type="text" id="screen" value="0" disabled ></td>
+            </tr>
+        </table>
+
+    </main>
+    <div id="lastDivFooter"></div>
+    <footer>
+
+        <div class="lastDiv">
+            <p><small>© 2018 VINCENZO. ALL RIGHTS RESERVED. TERMS OF USE AND PRIVACY POLICY. DESIGNED BY ROSHMAR228@GMAIL.COM.</small></p>
+        </div>
+    </footer>
+</body>
+</html>

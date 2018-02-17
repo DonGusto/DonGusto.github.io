@@ -1,6 +1,8 @@
 body{
     background-image: url("../photo/BordWithVegetabels.jpg");
+    background-repeat:no-repeat;
     background-attachment: fixed;
+    margin: 0 auto;
 }
 main{
     background-color: rgba(0, 0, 0, 0.71);

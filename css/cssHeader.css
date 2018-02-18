@@ -1,0 +1,144 @@
+.menu{
+    display: -webkit-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding-top: 10px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.menu a{
+    text-decoration: none;
+    text-align: right;
+    padding-top: 10px;
+    color: #FFFFFF;
+}
+#menu1{
+    width: 100%;
+    height: 100px;
+    display: -webkit-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+}
+#headerBackground1{
+    background-image: url("../photo/header.jpg");
+    width: 100%;
+    height: 700px;
+    position: relative;
+    color: #FFFFFF;
+}
+#headerBackground2{
+    width: 100%;
+    height: 20px;
+    background-image: url("../photo/Fon.png");
+}
+
+#table1{
+    width: 100%;
+    height: 140px;
+}
+#table1 tr+td{
+    width: 35%;
+
+}
+header h1{
+    list-style-type: none;
+    color: white;
+}
+.homeMenu {
+    color: #FFFFFF;
+    text-decoration: underline orange ;
+    font-weight: bold;
+    opacity: 0;
+
+
+}
+#headerBackground2+div{
+     width: 50%;
+     display: inline-block;
+ }
+.headerMenu{
+    width: 10%;
+    display: inline-block;
+    opacity: 0;
+    display: none;
+}
+.headerBackground3 {
+    width: 33%;
+    height: 450px;
+    display: inline-block;
+}
+header h1{
+    color: white;
+}
+.portfolio{
+    display: inline-flex;
+    width: 100%;
+    height: 350px;
+    padding-top: 5px;
+    justify-content: space-between;
+}
+.portfolio div{
+    display: inline-flex;
+    list-style-type: none;
+}
+.portfolio div{
+    display: inline-block;
+    width: 33%;
+    position: relative;
+}
+.portfolio img{
+    max-width: 100%;
+    width: 100%;
+    height: 350px;
+    display: block;
+}
+.desrc{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 240px;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    padding-top: 110px;
+    text-align:  center ;
+    opacity: 0;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.portfolio div:hover .desrc{
+    opacity: 1;
+}
+.portfolio a{
+    text-decoration: none;
+}
+@media(min-width: 0px) and (max-width: 320px){
+    #headerBackground1{
+        background-image: url("../photo/header.jpg");
+        width: 320px;
+        height: 250px;
+        position: relative;
+        color: #FFFFFF;
+    }
+     #menu1{
+         text-align: center;
+     }
+     .portfolio {
+         width: 100%;
+         height: 30px;
+     }
+     .portfolio div img{
+         width: 100%;
+         height: 107px;
+     }
+
+}

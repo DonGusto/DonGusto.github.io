@@ -1,0 +1,38 @@
+#lastDiv1{
+    width: 100%;
+    height: 600px;
+    background-image: url("../photo/Fon.png");
+    display: inline-flex;
+}
+.lastDiv1{
+    width: 60%;
+    height: 600px;
+}
+.lastDiv2{
+    width: 40%;
+    height: 100%;
+    margin: 0;
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+}
+#lastDiv2{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+#mainButton{
+    color: white;
+    background-color: orange;
+    border: solid white;
+    text-align:center;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 49px;
+}

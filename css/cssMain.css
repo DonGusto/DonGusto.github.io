@@ -1,38 +1,50 @@
-main table{
+.mainDiv{
     background-image: url("../photo/Fon.png");
     width: 100%;
-    height: 200px;
-}
-img{
-    width: 80%;
     height: 100%;
-    display: inline-block;
-    align-content :center;
-    justify-items: center;
-    justify-content: center;
-
+    display: -webkit-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-flex-direction: column; /* Safari */
+    flex-direction: column;
+    color: orange;
 }
-table {
-
-    width: 100%;
-    height: 550px;
-}
-table + tr{
-    height: 50px;
-}
-table +tr+tr{
-
-    height: 250px;
-}
-table +tr+tr+tr+tr{
-    height: 100px;
-}
-td {
-
-    align: center;
+.mainDiv2{
+    text-align: center;
     align-content: center;
-    align-items: center;
-    align-self: center;
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-justify-content: space-around; /* Safari */
+    justify-content: space-around;
+}
+.mainDiv3{
+    width: 100%;
+    height: 100%;
+    display: block ;
+    display: -webkit-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-justify-content: space-around; /* Safari */
+    justify-content: space-around;
+}
+.mainDiv+div+h1{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    align-content: center;
+}
+main
+
+
+.mainDiv img{
+   width: 100%;
+    height: 100%;
 }
 #see_menu{
    border: gray;
@@ -50,13 +62,28 @@ td {
 .photo{
     padding-top: 5px;
     padding-bottom: 5px;
+
     width: 100%;
-    height: 300px;
+    height: 100%;
+    display: -webkit-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-justify-content: space-between; /* Safari */
     justify-content: space-between;
 }
 .photo div{
-    width: 25%;
+    -webkit-justify-content: space-between; /* Safari */
+    justify-content: space-between;
+    display: -webkit-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding-right: 1,5px;
+    padding-left: 1,5px;
+    width: 24%;
+    padding-left: 3px;
+    padding-right: 3px;
     height: auto;
     display: block;
     margin: 0;
@@ -75,6 +102,8 @@ main p {
     font-family: 'Lobster', cursive;
 }
 .mainButton{
+    -webkit-justify-content: space-around; /* Safari */
+    justify-content: space-around;
     width: 20%;
     height: 60px;
     text-align: center;
@@ -87,7 +116,7 @@ main p {
 #mainButtonMenu{
     color: white;
     align-content: center;
-    padding-top: 5px;
+    padding-bottom: 10%;
     border-radius: 10px;
     background-color: orange;
     text-decoration: none;
@@ -99,6 +128,49 @@ main p {
     background-image: url("../photo/Fon.png");
 }
 #mainButtonMenu h1{
-    padding-top: 8px;
+    padding-bottom: 90px;
+}
 
+@media(min-width: 0px) and (max-width: 380px){
+        .mainDiv{
+            -webkit-flex-direction: column; /* Safari */
+            flex-direction: column;
+        }
+        .mainDiv img{
+            width: 100%;
+        }
+        .mainDiv2{
+            -webkit-flex-direction: column; /* Safari */
+            flex-direction: column;
+        }
+        .mainButton{
+            width: 30%;
+            height: 40px;
+            font-size: xx-small;
+        }
+        .mainButton h1{
+            padding-bottom: 10%;
+        }
+        .photo div{
+
+            padding-bottom: 2px;
+            padding-top: 2px;
+            padding-left:2px ;
+            padding-right: 2px;
+            height: 96%;
+            width: 48%;
+            height: auto;
+            -webkit-justify-content: space-between; /* Safari */
+            justify-content: space-between;
+            display: -webkit-flex;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+        }
+        .photo{
+            width: 100%;
+            -webkit-flex-wrap: wrap; /* Safari */
+
+            flex-wrap: wrap;
+        }
 }

@@ -1,0 +1,175 @@
+.menu{
+    width: 100%;
+    height: 120px;
+    background: rgba(0, 0, 0, 0.7);
+    display: -webkit-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    text-decoration: none;
+}
+.menu1{
+    width: 30%;
+    padding-top: 2%;
+    text-align: center;
+}
+.container{
+    width: 70%;
+
+
+}
+.nav{
+    display: -webkit-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 95%;
+    padding-bottom: 20px;
+    text-decoration: none;
+
+}
+.nav li{
+    padding-top:40px ;
+    display: -webkit-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    text-decoration: none;
+}
+.nav li {
+    float: right;
+    padding-bottom: 20px;
+
+}
+.nav li a ,#touch-menu{
+    display:block ;
+    text-decoration: none;
+    color: white;
+
+}
+
+#touch-menu{
+    display: none;
+}
+@media (max-width: 768px) {
+    .nav{display: none}
+
+    #touch-menu{
+        display: block;
+        width:30%;
+        text-align: right;
+        padding-top: 25px;
+        padding-left: 40%;
+    }
+    .nav li {
+        float: none;
+        display: flex;
+        -webkit-flex-direction: column; /* Safari */
+        flex-direction: column;
+        color: white;
+    }
+    .nav li a{
+        background: rgba(0, 0, 0, 0.9);
+    }
+    .menu1{
+        width: 70%;
+    }
+    .nav li{
+        padding-top: 0;
+        padding-bottom: 1%;
+        width: 90%;
+        text-align: center;
+        border-left:2px white;
+    }
+    #touch-menu img{
+        width: 50px;
+        height: 50px;
+        padding-right: 2%;
+        padding-top: 10px;
+        font-size: xx-small;
+    }
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+#headerBackground1{
+    background-image: url("../photo/header.jpg");
+    width: 100%;
+    height: 700px;
+    position: relative;
+    color: #FFFFFF;
+}
+
+header h1{
+    list-style-type: none;
+    color: white;
+}
+.homeMenu {
+    color: #FFFFFF;
+    text-decoration: underline orange ;
+    font-weight: bold;
+    opacity: 0;
+
+
+}
+#headerBackground2+div{
+    width: 50%;
+    display: inline-block;
+}
+
+
+header h1{
+    color: white;
+}
+
+@media(min-width: 0px) and (max-width: 430px){
+
+    #menu1{
+        font-size:70%;
+        width: 70%;
+        padding-left: 10%;
+    }
+    #headerBackground1{
+        background-image: url("../photo/header320x180.jpg");
+        width: 100%;
+        height:250px;
+    }
+    .menu{
+        width: 100%;
+        height: 60px;
+    }
+    .menu1{
+        width: 30%;
+        font-size: xx-small;
+    }
+    .container{
+        width: 60%;
+    }
+    .nav li{
+        padding-top: 0;
+        padding-bottom: 1%;
+        width: 90%;
+        text-align: center;
+        border-left:2px white;
+        font-size: xx-small;
+    }
+    #touch-menu{
+        display: block;
+        width:30%;
+        text-align: right;
+        padding-top: 5%;
+        padding-left: 85%;
+        font-size: 15px;
+    }
+    #touch-menu img{
+        width: 30px;
+        height: 30px;
+        padding-right: 2%;
+        padding-top: 10px;
+        font-size: xx-small;
+    }
+}
+*{
+    font-family: 'Lobster', cursive;
+}

@@ -120,7 +120,7 @@
         display: block;
         width:30%;
         text-align: right;
-        padding-top: 5%;
+        padding-top: 25px;
         padding-left: 40%;
     }
     .nav li {
@@ -233,17 +233,18 @@ header h1{
         padding-top: 3px;
         padding-bottom: 3px;
         width: 100%;
-        height: 150px;
+        height: 100%;
     }
     .portfolio h1{
         padding-top: 15% ;
     }
     .portfolio div:hover .desrc{
+        max-width: 100%;
         height: 93%;
         opacity: 1;
         padding-top: 3px;
         margin-top:3px;
-        padding-bottom: 3px;
+        padding-bottom: 5px;
     }
     .desrc{
         height: 98%;
@@ -260,11 +261,15 @@ header h1{
         height:250px;
     }
     .menu{
+        width: 100%;
         height: 60px;
     }
     .menu1{
-        width: 40px;
+       width: 30%;
         font-size: xx-small;
+    }
+    .container{
+        width: 60%;
     }
     .nav li{
         padding-top: 0;
@@ -281,5 +286,12 @@ header h1{
         padding-top: 5%;
         padding-left: 85%;
         font-size: 15px;
+    }
+    #touch-menu img{
+        width: 30px;
+        height: 30px;
+        padding-right: 2%;
+        padding-top: 10px;
+        font-size: xx-small;
     }
 }

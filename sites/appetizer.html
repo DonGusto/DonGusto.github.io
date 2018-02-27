@@ -4,24 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Don Gusto</title>
-    <link rel="stylesheet" href="../css/cssCreatePizzaFooter.css">
-    <link rel="stylesheet" href="../css/cssAppetizerHeader.css">
+    <link rel="stylesheet" href="../css/cssMenuFooter.css">
+    <link rel="stylesheet" href="../css/MenuCss.css">
     <link rel="stylesheet" href="../css/cssAppetizerMain.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Shrikhand" rel="stylesheet">
     <link rel="shortcut icon" href="../photo/Graphicloads-Food-Drink-Pizza.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../JavaScript/Menu.js"></script>
 </head>
 <body>
     <header>
-        <div class="menu1">
-            <div class="menu"><h1>Don Gusto</h1></div>
-            <div class="menu"><a href="../index.html"><h3>Головна</h3></a></div>
-            <div class="menu"><a href="Menu.html"><h3>Меню</h3></a></div>
-            <div class="menu"><a href=""><h3>Блог</h3></a></div>
-            <div class="menu"><a href="../index.html#lastDiv1"><h3>Розташування</h3></a></div>
+        <div>
+            <div class="menu">
+                <div class="menu1">
+                    <h1>Don Gusto</h1>
+                </div>
+                <div class="container">
+                    <a href="#" id="touch-menu"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB5SURBVGhD7dZBEYAwDETRikABJ0RwRAAiGDQgAQWIQAuakoaZ1gKk6X8zK2AvmyQAwC9U9QyQ9S3SPBG5KOJJuCJ7gMxluwAA6Jxdxbv12Iuy8TR6QhFvapElQKayXQAAdM6u4hMgB0+jJxTxphYZA2Qo2wUA+FJKGcGeXRv5Ey18AAAAAElFTkSuQmCC"></a>
+                    <nav>
+                        <ul class="nav clearfix">
+                            <li><a href="../index.html"><h3>Головна</h3></a></li>
+                            <li><a href="Menu.html"><h3>Меню</h3></a></li>
+                            <li><a href=""><h3>Блог</h3></a></li>
+                            <li><a href="../index.html#lastDiv1"><h3>Розташування</h3></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </header>
     <main>
-        <div class="menuDish"><img src="../photo/salat.jpg" alt=""></div>
+        <div class="menuDish img"><img src="../photo/salat.jpg" alt=""></div>
         <div class="menuDish">
             <div class="title"><h1>Салати</h1></div>
                 <div>
@@ -205,6 +218,7 @@
                 </table>
                 </div>
         </div>
+        <div class="menuDish disable img"><img src="../photo/Omlet.jpg" alt=""></div>
         <div class="menuDish">
             <div class="title"><h1>Горячі закуски</h1></div>
                  <div>
@@ -322,8 +336,8 @@
                 </table>
             </div>
         </div>
-        <div class="menuDish"><img src="../photo/Omlet.jpg" alt=""></div>
-        <div class="menuDish"><img src="../photo/Basturma.jpg" alt=""></div>
+        <div class="menuDish disable2 img"><img src="../photo/Omlet.jpg" alt=""></div>
+        <div class="menuDish img"><img src="../photo/Basturma.jpg" alt=""></div>
         <div class="menuDish">
             <div class="title"><h1>Закуски до пива</h1></div>
             <div>

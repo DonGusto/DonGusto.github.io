@@ -13,7 +13,7 @@
 }
 .title +div {
     width: 100%;
-    height:350px;
+    height:87%;
     overflow: auto;
 }
 .title {
@@ -43,7 +43,7 @@ main{
 }
 img{
     width:100%;
-    height: 400px;
+    height: 100%;
 }
 .table{
     width: 100%;
@@ -58,4 +58,49 @@ tr{
 td+td{
     text-align: left;
     height: 10px;
+}
+.disable{
+    display: none;
+}
+@media (max-width: 620px) {
+    main{
+        -webkit-flex-direction: column; /* Safari */
+        flex-direction: column;
+    }
+    .menuDish{
+        width: 100%;
+        height: 300px;
+    }
+    .title +div{
+        height: 80%;
+    }
+    .img{
+        height: 50%;
+    }
+    .disable{
+        display: block;
+    }
+    .disable2{
+        display: none;
+    }
+
+}
+@media (min-width: 620px) and (max-width: 770px) {
+
+     main{
+          -webkit-flex-direction: column; /* Safari */
+          flex-direction: column;
+      }
+.menuDish{
+    width: 100%;
+}
+.img{
+    height: 50%;
+}
+.disable{
+    display: block;
+}
+.disable2{
+    display: none;
+}
 }

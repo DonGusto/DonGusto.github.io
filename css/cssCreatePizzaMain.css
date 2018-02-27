@@ -8,10 +8,9 @@ body{
 main{
     background-color: rgba(0, 0, 0, 0.71);
     width: 80%;
-
     display: inline-flex;
     justify-content: center;
-    margin-top: 110px;
+    margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
     align-content: center;
@@ -47,13 +46,13 @@ main{
 }
 /*=====================================================*/
 /* Customize the label (the container) */
-.container {
+.container2 {
     display: flex;
     justify-content: center;
-    padding-left: 20%;
+
     position: relative;
     cursor: pointer;
-    width: 40px;
+    width: 5%;
     height: 40px;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -63,7 +62,7 @@ main{
 }
 
 /* Hide the browser's default checkbox */
-.container input {
+.container2 input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -83,12 +82,12 @@ main{
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.container2 :hover input ~ .checkmark {
     background-color: rgba(10, 10, 10, 0.71);
 }
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.container2 input:checked ~ .checkmark {
     background-color: orange;
 }
 
@@ -100,12 +99,12 @@ main{
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+.container2 input:checked ~ .checkmark:after {
     display: block;
 }
 
 /* Style the checkmark/indicator */
-.container .checkmark:after {
+.container2 .checkmark:after {
     left: 9px;
     top: 5px;
     width: 5px;
@@ -139,3 +138,30 @@ main{
     margin: 0;
     box-shadow: 0 0 4px rgba(255, 165, 0, 0.92);
 }
+@media (max-width: 600px) {
+    #MyTable{
+        font-size: x-small;
+    }
+    main{
+        background-color: rgba(0, 0, 0, 0.71);
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-top: 10%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .container2{
+        padding-left: 0;
+    }
+    #screenButton {
+        width: 100px;
+        height: 30px;
+    }
+    #screen{
+        width: 100px;
+        height: 30px;
+
+    }
+}
+

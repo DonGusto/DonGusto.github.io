@@ -12,9 +12,9 @@
 }
 .title +div {
     width: 100%;
-    height:350px;
-}
+    height:87%;
 
+}
 .title {
     display: inline-flex;
     display: -ms-flexbox;
@@ -25,6 +25,10 @@
     justify-content: space-around;
     color: rgba(0, 0, 0, 5);
 
+}
+img{
+    width:100%;
+    height: 100%;
 }
 main{
 
@@ -43,7 +47,7 @@ main{
 }
 img{
     width:100%;
-    height: 400px;
+    height: 100%;
 }
 .table{
     width: 100%;
@@ -73,19 +77,106 @@ td+td{
     display: flex;
     justify-content: center;
     width: 100%;
+}
+.underMenu{
+    display: -webkit-flex;
+    display: inline-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
     height: 50px;
-    background-color: orange;
-    text-align: center;
-    padding-bottom: 10px;
-}
-.createPizza:hover{
-    background: rgba(0, 0, 0, 0.5);
-    opacity: 1;
-}
-.createPizza h2{
-    padding-bottom: 10px;
-}
-.createPizza a{
+    background: orange;
+    justify-content: center;
+    font-size: 200%;
     text-decoration: none;
-    color: #FFFFFF;
+}
+.underMenu :first-child{
+    display: -webkit-flex;
+    display: inline-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 10px;
+}
+.underMenu :last-child{
+    display: -webkit-flex;
+    display: inline-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.underMenu  a{
+    padding-bottom: 10px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding-left:5px;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media (max-width: 620px) {
+    main{
+        -webkit-flex-direction: column; /* Safari */
+        flex-direction: column;
+    }
+    .menuDish{
+        width: 100%;
+        height: 300px;
+    }
+    .title +div{
+        height: 100%;
+        overflow: auto;
+    }
+    .img{
+        height: 50%;
+    }
+    .disable{
+        display: block;
+    }
+    .disable2{
+        display: none;
+    }
+    .createPizza{
+        justify-content: center;
+        font-size:70%;
+    }
+    .table{
+        font-size: 80%;
+    }
+    .title{
+        display: none;
+    }
+    .underMenu{
+        padding-top: 3%;
+        height: 60px;
+        font-size: 25px;
+    }
+
+}
+@media (max-width: 440px) {
+    .underMenu{
+        padding-top: 3%;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+@media (min-width: 620px) and (max-width: 770px) {
+
+    main{
+        -webkit-flex-direction: column; /* Safari */
+        flex-direction: column;
+    }
+    .menuDish{
+        width: 100%;
+    }
+    .img{
+        height: 50%;
+    }
+    .disable{
+        display: block;
+    }
+    .disable2{
+        display: none;
+    }
+    .underMenu{
+        padding-top: 5px;
+        font-size: 25px;
+    }
 }
